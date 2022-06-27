@@ -5,15 +5,23 @@ void main() => runApp(MaterialApp(
         appBar: AppBar(
           title: Text('My first Flutter APP'),
           centerTitle: true,
+          backgroundColor: Color.fromARGB(255, 211, 19, 16),
         ),
         body: Center(
-          child: Text('Hellow Sajjad Khan'),
+          child: Text(
+            "Hellow Sajjad Khan",
+            style: TextStyle(
+              fontSize: 30.0,
+              fontWeight: FontWeight.bold,
+              letterSpacing: 3.0,
+            ),
+          ),
         ),
         floatingActionButton: FloatingActionButton(
-          child: Icon(Icons.ac_unit_outlined),
-          backgroundColor: Colors.green,
           onPressed: () {},
+          child: Text("click"),
+          //child: Icon(Icons.ac_unit_outlined),
+          backgroundColor: Color.fromARGB(255, 13, 207, 94),
         ),
       ),
     ));
-//This is so nice to video 5 , code Ninjas 
